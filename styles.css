@@ -1,3 +1,8 @@
 img {
     max-width: 100px;
 }
+
+.instrument {
+    background-color: #ccdcf0;
+    text-align: center;
+}
