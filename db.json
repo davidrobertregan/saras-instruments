@@ -5,21 +5,64 @@
             "name": "Goodtime II",
             "instrument": "Banjo",
             "manufacturer": "Deering Banjo Company",
-            "img_file": "./images/goodtime.jpeg"
+            "img_file": "./images/goodtime.jpeg",
+            "notes": "Sara will add notes here"
         },
         {
             "id": 2,
             "name": "Martin DX1AE",
             "instrument": "Acoustic Guitar",
             "manufacturer": "Martin Guitars",
-            "img_file": "./images/goodtime.jpeg"
+            "img_file": "./images/goodtime.jpeg",
+            "notes": "Sara will add notes here"
         },
         {
             "id": 3,
             "name": "KM-150 A-Style",
             "instrument": "Mandolin",
             "manufacturer": "Kentucky Mandolin Company",
-            "img_file": "./images/goodtime.jpeg"
+            "img_file": "./images/goodtime.jpeg",
+            "notes": "Sara will add notes here"
+        },
+        {
+            "id": 4,
+            "name": "1970s Harmony",
+            "instrument": "Acoustic Guitar",
+            "manufacturer": "Harmony",
+            "img_file": "./images/goodtime.jpeg",
+            "notes": "Sara will add notes here"
+        },
+        {
+            "id": 5,
+            "name": "The Ibanez",
+            "instrument": "Acoustic Guitar",
+            "manufacturer": "Ibanez",
+            "img_file": "./images/goodtime.jpeg",
+            "notes": "Sara will add notes here"
+        },
+        {
+            "id": 6,
+            "name": "Squire Telecaster",
+            "instrument": "Electric Guitar",
+            "manufacturer": "Fender",
+            "img_file": "./images/goodtime.jpeg",
+            "notes": "Sara will add notes here"
+        },
+        {
+            "id": 7,
+            "name": "Linda's Bass",
+            "instrument": "Bass Guitar",
+            "manufacturer": "Ibanez",
+            "img_file": "./images/goodtime.jpeg",
+            "notes": "Sara will add notes here"
+        }, 
+        {
+            "id": 8,
+            "name": "1970s Harmony",
+            "instrument": "Acoustic Guitar",
+            "manufacturer": "Harmony",
+            "img_file": "./images/goodtime.jpeg",
+            "notes": "Sara will add notes here"
         }
     ]
 }
