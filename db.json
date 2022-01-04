@@ -1,0 +1,25 @@
+{
+    "instruments": [
+        {
+            "id": 1,
+            "name": "Goodtime II",
+            "instrument": "Banjo",
+            "manufacturer": "Deering Banjo Company",
+            "img_file": "./images/goodtime.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Martin DX1AE",
+            "instrument": "Acoustic Guitar",
+            "manufacturer": "Martin Guitars",
+            "img_file": "./images/goodtime.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "KM-150 A-Style",
+            "instrument": "Mandolin",
+            "manufacturer": "Kentucky Mandolin Company",
+            "img_file": "./images/goodtime.jpeg"
+        }
+    ]
+}
