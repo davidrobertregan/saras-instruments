@@ -1,14 +1,24 @@
+body {
+    background-color: black;
+    color: white;
+}
+
 img {
-    max-width: 100px;
+    width: 100px;
 }
 
 .instrument {
-    background-color: #ccdcf0;
+    background-color: black;
     text-align: center;
     margin: 5%;
 }
 
 #instrument-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
+
+/* #instrument-container div {
+    width: 100px;
+} */
