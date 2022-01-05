@@ -19,21 +19,28 @@ const getInstruments = () => {
 
             let name = document.createElement("h2")
             let img = document.createElement("img")
-            let instrument = document.createElement("p") 
-            let manufacturer = document.createElement("p")
-            let notes = document.createElement("p")
+            let instrument = document.createElement("h3") 
+            // let manufacturer = document.createElement("p")
+            // // let notes = document.createElement("p")
 
-            notes.textContent = `Why Sara loves it: "${i.notes}"`
-            manufacturer.textContent = `Made by: ${i.manufacturer}`
+            // notes.textContent = `Why Sara loves it: "${i.notes}"`
+            // manufacturer.textContent = `Made by: ${i.manufacturer}`
             instrument.textContent = i.instrument
             img.src = i.img_file
             name.textContent = i.name
+            name.className = "hide"
 
-            div.appendChild(name)
             div.appendChild(img)
-            div.appendChild(instrument)
-            div.appendChild(manufacturer)
-            div.appendChild(notes)
+            div.appendChild(name)
+            // div.addEventListener("mouseenter", () => {
+            //     div.appendChild(name)
+            // })
+            // div.addEventListener("mouseleave", () => {
+            //     div.removeChild(name)
+            // })
+            // div.appendChild(instrument)
+            // div.appendChild(manufacturer)
+            // div.appendChild(notes)
         });
     })
 }

@@ -3,22 +3,38 @@ body {
     color: white;
 }
 
-img {
-    width: 100px;
-}
-
 .instrument {
     background-color: black;
     text-align: center;
     margin: 5%;
 }
 
+/* img {
+    max-width: 200px;
+} */
+
 #instrument-container {
     display: grid;
-    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-/* #instrument-container div {
-    width: 100px;
-} */
+.instrument {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+}
+
+.hide {
+    display: none;
+    font-size: 1em;
+}
+
+.instrument:hover > .hide {
+    display: block;
+    transition: .3s;
+}
+
+.instrument img {
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
