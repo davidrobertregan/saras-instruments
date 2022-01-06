@@ -9,7 +9,12 @@ body {
     margin: 5%;
 }
 
-img {
+.instrument-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.instrument-details > div > img {
     max-width: 400px;
 }
 
