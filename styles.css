@@ -24,17 +24,25 @@ body {
 }
 
 .hide {
-    display: none;
+    opacity: 0%;
     font-size: 1em;
 }
 
 .instrument:hover > .hide {
     display: block;
-    transition: .3s;
+    opacity: 100%;
+    transition: .7s;
 }
 
 .instrument img {
     max-width: 200px;
     display: block;
     margin: auto;
+    border-radius: 10%;
+    opacity: 70%;
+}
+
+.instrument img:hover {
+    opacity: 100%;
+    transition: .5s;
 }
