@@ -9,9 +9,9 @@ body {
     margin: 5%;
 }
 
-/* img {
-    max-width: 200px;
-} */
+img {
+    max-width: 400px;
+}
 
 #instrument-container {
     display: grid;
@@ -40,6 +40,7 @@ body {
     margin: auto;
     border-radius: 10%;
     opacity: 70%;
+    transition: .5s;
 }
 
 .instrument img:hover {

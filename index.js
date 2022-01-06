@@ -5,6 +5,7 @@ h1.addEventListener("click", () => {
     console.log("It worked!")
 })
 
+let mainBody = document.querySelector("#main-body")
 let instrumentContainer = document.getElementById("instrument-container")
 console.log(instrumentContainer)
 
@@ -18,29 +19,37 @@ const getInstruments = () => {
             instrumentContainer.appendChild(div)
 
             let name = document.createElement("h2")
+                name.textContent = i.name
+                name.className = "hide"
+            
             let img = document.createElement("img")
+                img.src = i.img_file
+            
             let instrument = document.createElement("h3") 
-            // let manufacturer = document.createElement("p")
-            // // let notes = document.createElement("p")
-
-            // notes.textContent = `Why Sara loves it: "${i.notes}"`
-            // manufacturer.textContent = `Made by: ${i.manufacturer}`
-            instrument.textContent = i.instrument
-            img.src = i.img_file
-            name.textContent = i.name
-            name.className = "hide"
+                instrument.textContent = i.instrument
+            
+            let manufacturer = document.createElement("p")
+                manufacturer.textContent = `Made by ${i.manufacturer}`
+            
+            let notes = document.createElement("p")
+                notes.textContent = `What Sara says: ${i.notes}`
+            
 
             div.appendChild(img)
             div.appendChild(name)
-            // div.addEventListener("mouseenter", () => {
-            //     div.appendChild(name)
-            // })
-            // div.addEventListener("mouseleave", () => {
-            //     div.removeChild(name)
-            // })
-            // div.appendChild(instrument)
-            // div.appendChild(manufacturer)
-            // div.appendChild(notes)
+
+            div.addEventListener("click", () => {
+                instrumentContainer.remove()
+                let details = document.createElement("div")
+                details.className = "intrument-details"
+                mainBody.appendChild(details)
+                details.appendChild(img)
+                details.appendChild(name)
+                details.appendChild(instrument)
+                details.appendChild(notes)
+                details.appendChild(manufacturer)
+                
+            })
         });
     })
 }
