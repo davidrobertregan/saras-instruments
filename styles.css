@@ -19,7 +19,8 @@ body {
     text-decoration: none;
 }
 
-.main-header a:hover {
+.main-header a:hover,
+.main-footer a:hover {
     color: rgb(94, 103, 185);
 }
 
@@ -36,13 +37,31 @@ body {
     text-align: right;
 }
 
-.main-header__nav-item {
+.main-header__nav-item, 
+.main-footer__nav-item {
     display: inline-block;
     margin: 0 5%;
 }
 
-.main-header__nav-item a {
+.main-header__nav-item a,
+.main-footer__nav-item a {
     font-size: 18px;
+}
+
+.main-footer {
+    padding: 32px;
+}
+
+.main-footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.main-footer__nav {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
 
