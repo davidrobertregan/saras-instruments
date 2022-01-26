@@ -76,13 +76,15 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-.instrument-details > div > img {
-    width: 100%;
+.instrument-details__img > img{
+    width: 80%;
 }
 
 .instrument-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    margin: 32px;
+    margin-top: 64px;
 }
 
 .instrument {

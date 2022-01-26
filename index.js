@@ -14,15 +14,17 @@ const showDetails = (i) => {
     instrumentDetails.classList.remove("hidden")
     instrumentDetails.className = "instrument-details"
 
-    let div = document.createElement("div")
-        div.className = "instrument-details__item"
-        instrumentDetails.appendChild(div)
+    // two divs for instrument details
+    let descDiv = document.createElement("div")
+    descDiv.className = "instrument-details__description"
+    instrumentDetails.appendChild(descDiv)
+
+    let imgDiv = document.createElement("div")
+    instrumentDetails.appendChild(imgDiv)
+    imgDiv.className = "instrument-details__img"
 
         let name = document.createElement("h2")
             name.textContent = i.name
-        
-        let img = document.createElement("img")
-            img.src = i.img_file
         
         let instrument = document.createElement("h3") 
             instrument.textContent = i.instrument
@@ -37,14 +39,22 @@ const showDetails = (i) => {
             button.textContent = "Back"
             button.addEventListener('click', () => {
                 instrumentDetails.className = "hidden"
-                div.remove()
+                descDiv.remove()
+                imgDiv.remove()
                 instrumentContainer.className = "instrument-container"
             })
-        
 
-        div.appendChild(img)
-        div.appendChild(name)
-        div.appendChild(button)
+
+        let img = document.createElement("img")
+            img.src = i.img_file
+
+    imgDiv.appendChild(img)
+    descDiv.appendChild(name)
+    descDiv.appendChild(instrument)
+    descDiv.appendChild(manufacturer)
+    descDiv.appendChild(notes)
+
+    descDiv.appendChild(button)
     
 }
 
