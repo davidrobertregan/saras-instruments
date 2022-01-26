@@ -13,7 +13,7 @@
             "name": "Martin DX1AE",
             "instrument": "Acoustic Guitar",
             "manufacturer": "Martin Guitars",
-            "img_file": "./images/goodtime.jpeg",
+            "img_file": "./images/martin.jpeg",
             "notes": "Sara will add notes here"
         },
         {
@@ -21,7 +21,7 @@
             "name": "KM-150 A-Style",
             "instrument": "Mandolin",
             "manufacturer": "Kentucky Mandolin Company",
-            "img_file": "./images/goodtime.jpeg",
+            "img_file": "./images/mandolin.jpeg",
             "notes": "Sara will add notes here"
         },
         {
@@ -29,7 +29,7 @@
             "name": "1970s Harmony",
             "instrument": "Acoustic Guitar",
             "manufacturer": "Harmony",
-            "img_file": "./images/goodtime.jpeg",
+            "img_file": "./images/harmony.jpeg",
             "notes": "Sara will add notes here"
         },
         {
@@ -37,7 +37,7 @@
             "name": "The Ibanez",
             "instrument": "Acoustic Guitar",
             "manufacturer": "Ibanez",
-            "img_file": "./images/goodtime.jpeg",
+            "img_file": "./images/ibanez.jpeg",
             "notes": "Sara will add notes here"
         },
         {
@@ -45,7 +45,7 @@
             "name": "Squire Telecaster",
             "instrument": "Electric Guitar",
             "manufacturer": "Fender",
-            "img_file": "./images/goodtime.jpeg",
+            "img_file": "./images/sara-electric-1.jpeg",
             "notes": "Sara will add notes here"
         },
         {
@@ -53,15 +53,15 @@
             "name": "Linda's Bass",
             "instrument": "Bass Guitar",
             "manufacturer": "Ibanez",
-            "img_file": "./images/goodtime.jpeg",
+            "img_file": "./images/sara-bass-2.jpg",
             "notes": "Sara will add notes here"
         }, 
         {
             "id": 8,
-            "name": "1970s Harmony",
-            "instrument": "Acoustic Guitar",
-            "manufacturer": "Harmony",
-            "img_file": "./images/goodtime.jpeg",
+            "name": "Guitalele",
+            "instrument": "Guitar and Ukelele mixed",
+            "manufacturer": "Yamaha",
+            "img_file": "./images/guitalele.jpeg",
             "notes": "Sara will add notes here"
         }
     ]

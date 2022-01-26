@@ -76,8 +76,19 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+.instrument-details__description {
+    padding: 16px;
+
+}
+
+.instrument-details__img {
+    margin: 16px;
+}
+
 .instrument-details__img > img{
-    width: 80%;
+    width: 65%;
+    border-radius: 5%;
+    text-align: center;
 }
 
 .instrument-container {
@@ -107,7 +118,7 @@ body {
     max-width: 80%;
     display: block;
     margin: auto;
-    border-radius: 10%;
+    border-radius: 5%;
     opacity: 70%;
     transition: .5s;
 }
@@ -118,5 +129,6 @@ body {
 }
 
 .hidden {
+    transition: visibility 0s linear 300ms, opacity 300ms;
     display: none;
 }
