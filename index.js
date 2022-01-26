@@ -1,11 +1,4 @@
-const h1 = document.getElementsByTagName("h1")[0]
-console.log(h1)
 
-h1.addEventListener("click", () => {
-    console.log("It worked!")
-})
-
-let mainBody = document.querySelector("#main-body")
 let instrumentContainer = document.getElementById("instrument-container")
 console.log(instrumentContainer)
 
