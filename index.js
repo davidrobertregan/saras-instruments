@@ -9,24 +9,13 @@ let mainBody = document.querySelector("#main-body")
 let instrumentContainer = document.getElementById("instrument-container")
 console.log(instrumentContainer)
 
-let instrumentsArr = []
-
 const getInstruments = () => {
     fetch("http://localhost:3000/instruments")
     .then(resp => resp.json())
-    .then(instruments => {
-        setInstruments(instruments)
-        displayInstruments()
-    })
+    .then(instruments => instruments.forEach(renderInstrument))
 }
 
-const setInstruments = (instruments) => {
-    instrumentsArr = instruments
-    console.log(instruments)
-}
-
-const displayInstruments = () => {
-    instrumentsArr.forEach(i => {
+const renderInstrument = (i) => {
         let div = document.createElement("div")
         div.className = "instrument"
         instrumentContainer.appendChild(div)
@@ -52,34 +41,8 @@ const displayInstruments = () => {
         div.appendChild(name)
 
         div.addEventListener("click", () => {
-            instrumentContainer.remove()
-            let details = document.createElement("div")
-            details.className = "instrument-details"
-            let col1 = document.createElement("div")
-            let col2 = document.createElement("div")
-            
-            mainBody.appendChild(details)
-            details.appendChild(col1)
-            details.appendChild(col2)
-            
-            col1.appendChild(img)
-            col2.appendChild(name)
-            col2.appendChild(instrument)
-            col2.appendChild(notes)
-            col2.appendChild(manufacturer)
-            
-            let button = document.createElement("button")
-            button.textContent = "Back"
-            col2.appendChild(button)
-
-            button.addEventListener("click", () => {
-                getInstruments()
-            })
-            
+            console.log('Show more details on click')
         })
-    });
-}
-
-console.log(instrumentsArr)
+    }
 
 getInstruments()
