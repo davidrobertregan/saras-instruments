@@ -12,6 +12,7 @@ const getInstruments = () => {
 const showDetails = (i) => {
     instrumentContainer.className = "hidden"
     instrumentDetails.classList.remove("hidden")
+    instrumentDetails.className = "instrument-details"
 
     let div = document.createElement("div")
         div.className = "instrument"
@@ -32,10 +33,19 @@ const showDetails = (i) => {
         
         let notes = document.createElement("p")
             notes.textContent = `What Sara says: ${i.notes}`
+
+        let button = document.createElement('button')
+            button.textContent = "Back"
+            button.addEventListener('click', () => {
+                instrumentDetails.className = "hidden"
+                div.remove()
+                instrumentContainer.className = "instrument-container"
+            })
         
 
         div.appendChild(img)
         div.appendChild(name)
+        div.appendChild(button)
     
 }
 
