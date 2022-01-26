@@ -15,12 +15,11 @@ const showDetails = (i) => {
     instrumentDetails.className = "instrument-details"
 
     let div = document.createElement("div")
-        div.className = "instrument"
+        div.className = "instrument-details__item"
         instrumentDetails.appendChild(div)
 
         let name = document.createElement("h2")
             name.textContent = i.name
-            name.className = "hide"
         
         let img = document.createElement("img")
             img.src = i.img_file
