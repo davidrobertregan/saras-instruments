@@ -72,8 +72,9 @@ body {
 }
 
 .instrument-details {
+    margin: 8% 10%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 
 .instrument-details__description {
@@ -82,13 +83,14 @@ body {
 }
 
 .instrument-details__img {
-    margin: 16px;
+    text-align: center;
+    max-width: 500px;
 }
 
 .instrument-details__img > img{
     width: 65%;
     border-radius: 5%;
-    text-align: center;
+    margin: auto;
 }
 
 .instrument-container {
